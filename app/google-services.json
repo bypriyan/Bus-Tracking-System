@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "171756615927",
+    "project_id": "bus-tracking-system-e1c77",
+    "storage_bucket": "bus-tracking-system-e1c77.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:171756615927:android:f3af852861ddd98519bbf2",
+        "android_client_info": {
+          "package_name": "com.bypriyan.bustrackingsystem"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3RVIXcgYYhNgwb1342TiLelJN4pNHO-I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

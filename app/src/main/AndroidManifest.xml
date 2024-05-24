@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Base.Theme.BusTrackingSystem"
+        tools:targetApi="31">
+        <activity
+            android:name=".DashbordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".register.SelectCollegeActivity"
+            android:exported="true"
+            android:theme="@style/Theme.App.SplashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/MAP_API_KEY" />
+
+        <activity
+            android:name=".userActivity.UserMapTrackBusActivity"
+            android:exported="false"
+            android:label="@string/title_activity_user_map_track_bus"
+            android:theme="@style/Theme.BusTrackingSystem" />
+        <activity
+            android:name=".userActivity.UserDashbordActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BusTrackingSystem"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".register.UserOTPActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BusTrackingSystem"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".register.RegisterUserActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BusTrackingSystem" />
+        <activity
+            android:name=".driverActivity.DriverDashbordActivity"
+            android:exported="false"
+            android:label="@string/title_activity_driver_dashbord"
+            android:theme="@style/Theme.BusTrackingSystem" />
+
+        <service
+            android:name=".driverActivity.LocationService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".driverActivity.DriverMainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.BusTrackingSystem" />
+        <activity
+            android:name=".register.OTPActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BusTrackingSystem"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".register.RegisterDriverActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BusTrackingSystem"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"
+            android:theme="@style/Theme.BusTrackingSystem" />
+        <activity
+            android:name=".register.SelectActivity"
+            android:exported="true"
+            android:theme="@style/Theme.BusTrackingSystem" />
+    </application>
+
+</manifest>

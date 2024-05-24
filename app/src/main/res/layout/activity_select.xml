@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".register.SelectActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnsLayout">
+
+        <RelativeLayout
+            android:id="@+id/rlLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <FrameLayout
+                android:id="@+id/frameLayout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_270sdp">
+
+                <com.flaviofaria.kenburnsview.KenBurnsView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/select_sc_img"/>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_100sdp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/white_gradient"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/backBtn"
+                    android:layout_width="@dimen/_27sdp"
+                    android:layout_height="@dimen/_27sdp"
+                    android:layout_margin="@dimen/_15sdp"
+                    android:background="@color/transparent"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/ic_back"
+                    app:tint="@color/white" />
+
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="@dimen/_10sdp"
+                android:gravity="center"
+                android:layout_below="@id/frameLayout">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_26sdp"
+                    android:fontFamily="@font/black"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/_18ssp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Empowering commuters with real-time precision. Track your journey seamlessly, ensuring punctuality and peace of mind."
+                    android:textColor="@color/dark_greay"
+                    android:gravity="center_horizontal"
+                    android:paddingLeft="@dimen/_8sdp"
+                    android:paddingRight="@dimen/_8sdp"
+                    android:fontFamily="@font/regular"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:textSize="@dimen/_10ssp"/>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/btnsLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/_15sdp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:text="Register As User"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:id="@+id/registerUser"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cornerRadius="@dimen/_6sdp"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/appColor"/>
+
+        <TextView
+            android:id="@+id/registerDriver"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:textSize="@dimen/_10ssp"
+            android:text="Register As Driver"
+            android:gravity="center"
+            android:textColor="@color/appColor"
+            android:textStyle="bold"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_blue_outline"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_48sdp"
+            android:text="Register As Admin"
+            android:layout_gravity="center"
+            android:textAllCaps="false"
+            android:id="@+id/registerAdmin"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:cornerRadius="@dimen/_6sdp"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/appColor"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
